@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>PDF Template</title>
+</head>
+<body>
+    <h3>PDF Export for query: "q={{searchQuery}}"</h3>
+    <h3>User counts found: {{totalCount}} </h3>
+    <h3>Users listed: {{listSize mapItems}} </h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Login</th>
+                <th>Id</th>
+            </tr>
+        </thead>
+        	<tbody>{{#each mapItems}}
+                <tr>
+                    <td>{{login}}</td>
+                    <td>{{id}}</td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td colspan="2">Record not found!</td>
+                </tr>{{/each}}
+		</tbody>
+    </table>
+</body>
+</html>

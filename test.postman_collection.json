@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "d419ed77-f921-462c-9723-b398bafb78f2",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26243865"
+	},
+	"item": [
+		{
+			"name": "export-normal-test-page-1-size-20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/export?search=qqq%26location=Indonesia%26per_page=20%26page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "qqq%26location=Indonesia%26per_page=20%26page=1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-normal-test-page-2-size-20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/export?search=qqq%26location=Indonesia%26per_page=20%26page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "qqq%26location=Indonesia%26per_page=20%26page=2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-normal-test-page-1-size-40",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/export?search=qqq%26location=Indonesia%26per_page=40%26page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "qqq%26location=Indonesia%26per_page=40%26page=1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-record-does-not-exist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/export?search=qqzzzxxqq%26location=Indonesia%26per_page=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "qqzzzxxqq%26location=Indonesia%26per_page=200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export-history-normal-test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/export-history?pageNo=0&pageSize=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export-history"
+					],
+					"query": [
+						{
+							"key": "pageNo",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download-normal-test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/download-pdf/c2570de5-e1fc-4836-80dc-fd371210ffe5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"download-pdf",
+						"c2570de5-e1fc-4836-80dc-fd371210ffe5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
