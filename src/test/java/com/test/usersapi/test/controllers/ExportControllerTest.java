@@ -59,22 +59,6 @@ public class ExportControllerTest {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-//        String name = "test.pdf";
-//        String requestBody = "{\"name\": \"" + name + "\", \"search\": \"john\"}";
-//
-//        HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
-//
-//        byte[] pdfBytes = { 1, 2, 3, 4 };
-//
-//        when(restTemplate.exchange(eq("http://localhost:8080/export"), eq(HttpMethod.POST), any(HttpEntity.class), eq(byte[].class)))
-//                .thenReturn(new ResponseEntity<>(pdfBytes, HttpStatus.OK));
-//        
-//        when(exportHistoryRepository.save(any(ExportHistory.class))).thenReturn(new ExportHistory(name));
-//
-//        when(fileStorageService.saveFile(any(byte[].class), any(String.class))).thenReturn(name);
-//        
-//        when(exportHistoryRepository.findById(anyString())).thenReturn(Optional.of(new ExportHistory(name)));
-
         String query="qqqq%26location=Indonesia%26per_page=200";
         //String requestBody = "{\"search\": \"" + query + "\"}";
         MapExportPdf exportReturnVal = new MapExportPdf();

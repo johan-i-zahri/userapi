@@ -13,7 +13,6 @@ public class GithubApiService {
 
     public String searchUsers(String searchQuery) {
         String url = "https://api.github.com/search/users?q=" + searchQuery;
-        //System.out.println(url);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
         if (response.getStatusCode() == HttpStatus.OK) {

@@ -19,6 +19,9 @@ Program specification as below:
 Reference Github Public API to integrate (Or can find similar API):  
 https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-users
 
+# Setup your eclipse ide to enable lombok
+Please follow the instructions in this url:  
+https://projectlombok.org/setup/eclipse
 
 # To open project using Eclipse
 1. Import project from git with the url -> https://github.com/johan-i-zahri/usersapi.git  
@@ -51,6 +54,16 @@ src/main/resources/application.properties
 
 # To run the coverage test 
 Right click on the project and go to Coverage As>JUnit Test  
+
+If you would like to run the coverage against live test use the following:  
+Right click on the project and go to Coverage As>Java Application  
+
+Do not terminate the instance so as to retain the coverage data,  
+instead use the shutdown postman collection action or follow the link:  
+http://localhost:8000/shutdown-app
+
+The default port to run is 8000, configured in the application.properties
+* server.port=8000
 
 # To import the postman collection
 Use the files in extra/postman/test.postman_collection.json
